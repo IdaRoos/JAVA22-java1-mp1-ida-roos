@@ -12,7 +12,7 @@ public class Main {
 			// TODO Auto-generated method stub
 			Scanner sc = new Scanner(System.in);
 			int random = (int) Math.round(Math.random() * 100);
-			//System.out.println(random); // See the answer
+			//System.out.println(random); // See the random number
 			int guesses = 0;
 			System.out.println("Guess the number between 0 to 100");
 			int input = -1;
@@ -34,8 +34,16 @@ public class Main {
 						System.out.println("Wrong, it's higher");
 					}
 			}
+				
+				if (guesses == 1) {
+				System.out.println("Correct! You guessed " + guesses + " time");
+			}
 			
+			else {
+				
 			System.out.println("Correct! You guessed " + guesses + " times");
+			
+			}
 				
 
 			}
